@@ -1,0 +1,124 @@
+:root {
+  --orange: #ff8b64;
+  --green: #4bcf82;
+  --cyan: #55c2e6;
+  --violet: #7335d2;
+  --rose: #ff5e7d;
+  --yellow: #f1c75b;
+  --background-light-hover: #33397a;
+}
+
+article.activity-card {
+  position: relative;
+  width: 255px;
+  height: 100%;
+}
+
+.decorative-illustration {
+  background-color: white;
+  height: 160px;
+  border-radius: 1rem;
+
+  /* Configure background-image generally */
+  background-repeat: no-repeat;
+  background-position: top right 20px;
+}
+
+.decorative-illustration.work {
+  background-color: var(--orange);
+  background-image: url("icon-work.svg");
+}
+
+.decorative-illustration.play {
+  background-color: var(--cyan);
+  background-image: url("icon-play.svg");
+}
+
+.decorative-illustration.study {
+  background-color: var(--rose);
+  background-image: url("icon-study.svg");
+}
+
+.decorative-illustration.exercise {
+  background-color: var(--green);
+  background-image: url("icon-exercise.svg");
+}
+
+.decorative-illustration.social {
+  background-color: var(--violet);
+  background-image: url("icon-social.svg");
+}
+
+.decorative-illustration.self-care {
+  background-color: var(--yellow);
+  background-image: url("icon-self-care.svg");
+}
+
+.info {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem;
+  background-color: var(--light-background);
+  padding: 1.5rem;
+
+  transition: background-color 400ms;
+}
+
+.info:hover {
+  background-color: var(--background-light-hover);
+}
+
+.title-and-drag-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-and-drag-button h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.title-and-drag-button button {
+  background-color: transparent;
+  border: none;
+  cursor: grab;
+  touch-action: none;
+}
+
+.title-and-drag-button button:active {
+  cursor: grabbing;
+}
+
+.info h3 {
+  font-size: 3.35rem;
+  font-weight: 300;
+}
+
+.info p {
+  color: var(--light-text);
+  font-size: 0.95rem;
+}
+
+@media (width <= 600px) {
+  article.activity-card {
+    width: 330px;
+    height: 160px;
+  }
+
+  .info {
+    height: 120px;
+  }
+
+  .activity-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .activity-info h3 {
+    font-size: 2rem;
+  }
+}

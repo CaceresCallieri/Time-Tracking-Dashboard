@@ -1,0 +1,62 @@
+main {
+  height: 520px;
+  display: flex;
+  gap: 2rem;
+}
+
+section.user-card {
+  background-color: var(--light-background);
+  height: 100%;
+  width: 255px;
+  border-radius: 1rem;
+}
+
+section.activity-cards-container {
+  width: fit-content;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (width <= 1160px) {
+  #root {
+    height: 900px;
+  }
+
+  main {
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.activity-cards-container {
+    height: 500px;
+  }
+}
+
+@media (width <= 860px) {
+  #root {
+    height: 1200px;
+  }
+
+  section.activity-cards-container {
+    height: 750px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 600px) {
+  #root {
+    height: 1500px;
+    align-items: start;
+    padding-top: 2rem;
+  }
+
+  section.activity-cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
