@@ -35,7 +35,6 @@ const ActivityCard = ({
     opacity: isDragging ? 0.3 : 1,
   };
 
-  // TODO: Disable scroll on tap (touch devices) of drag button
   return (
     <article className="activity-card" ref={setNodeRef} style={style}>
       <div className={`decorative-illustration ${activityClass}`}></div>
