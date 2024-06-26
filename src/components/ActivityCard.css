@@ -26,32 +26,32 @@ article.activity-card {
 
 .decorative-illustration.work {
   background-color: var(--orange);
-  background-image: url("icon-work.svg");
+  background-image: url("/src/assets/icon-work.svg");
 }
 
 .decorative-illustration.play {
   background-color: var(--cyan);
-  background-image: url("icon-play.svg");
+  background-image: url("/src/assets/icon-play.svg");
 }
 
 .decorative-illustration.study {
   background-color: var(--rose);
-  background-image: url("icon-study.svg");
+  background-image: url("/src/assets/icon-study.svg");
 }
 
 .decorative-illustration.exercise {
   background-color: var(--green);
-  background-image: url("icon-exercise.svg");
+  background-image: url("/src/assets/icon-exercise.svg");
 }
 
 .decorative-illustration.social {
   background-color: var(--violet);
-  background-image: url("icon-social.svg");
+  background-image: url("/src/assets/icon-social.svg");
 }
 
 .decorative-illustration.self-care {
   background-color: var(--yellow);
-  background-image: url("icon-self-care.svg");
+  background-image: url("/src/assets/icon-self-care.svg");
 }
 
 .info {

@@ -2,7 +2,7 @@ import "./ActivityCard.css";
 import { motion } from "framer-motion";
 import { IActivityData, ITimeframesOptions } from "./../types";
 
-import DragIcon from "../../public/icon-ellipsis.svg?react";
+import DragIcon from "/src/assets/icon-ellipsis.svg?react";
 
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
