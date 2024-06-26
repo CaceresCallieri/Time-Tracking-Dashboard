@@ -4,13 +4,6 @@ main {
   gap: 2rem;
 }
 
-section.user-card {
-  background-color: var(--light-background);
-  height: 100%;
-  width: 255px;
-  border-radius: 1rem;
-}
-
 section.activity-cards-container {
   width: fit-content;
   display: grid;
